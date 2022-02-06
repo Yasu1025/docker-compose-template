@@ -1,0 +1,12 @@
+FROM node:14.17.0-alpine
+
+ARG WORKDIR
+ARG FRONT_PORT
+
+ENV HOME=/${WORKDIR} \
+    LANG=C.UTF-8 \
+    TZ=Asia/Tokyo \
+    HOST=0.0.0.0
+
+WORKDIR ${HOME}
+EXPOSE ${FRONT_PORT}

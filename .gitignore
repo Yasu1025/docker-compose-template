@@ -1,0 +1,11 @@
+.DS_Store
+.vscode-server
+.ash_history
+.bash_history
+.config
+.npm
+.ssh
+node_modules
+
+# direnv config file.
+/.env
